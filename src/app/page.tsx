@@ -177,13 +177,13 @@ export default function Home() {
           {winnerWorks.map((work) => (
             <article
               key={work.title}
-              className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-2xl shadow-black/20 backdrop-blur transition hover:-translate-y-1 hover:border-orange-200/30 hover:bg-white/[0.09]"
+              className="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-2xl shadow-black/20 backdrop-blur transition hover:-translate-y-1 hover:border-orange-200/30 hover:bg-white/[0.09]"
             >
               <div className="flex aspect-[4/3] items-center justify-center rounded-[1.5rem] border border-white/10 bg-[linear-gradient(135deg,_rgba(251,146,60,0.24),_rgba(168,85,247,0.22)),radial-gradient(circle_at_30%_30%,_rgba(255,255,255,0.18),_transparent_34%)] text-sm font-semibold uppercase tracking-[0.24em] text-white/55">
                 Thumbnail
               </div>
 
-              <div className="p-2 pt-5">
+              <div className="flex flex-1 flex-col p-2 pt-5">
                 <div className="mb-4 flex items-center justify-between gap-3">
                   <span className="rounded-full border border-orange-200/20 bg-orange-300/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-orange-100">
                     Winner
@@ -203,7 +203,7 @@ export default function Home() {
                   {work.description}
                 </p>
 
-                <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                <div className="mt-auto flex flex-col gap-3 pt-6 sm:flex-row">
                   <button
                     className="inline-flex flex-1 items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-bold text-[#08030f] transition hover:bg-orange-100"
                     type="button"
@@ -250,13 +250,13 @@ export default function Home() {
           {videoProjects.map((project) => (
             <article
               key={project.title}
-              className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-2xl shadow-black/20 backdrop-blur transition hover:-translate-y-1 hover:border-orange-200/30 hover:bg-white/[0.09]"
+              className="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-2xl shadow-black/20 backdrop-blur transition hover:-translate-y-1 hover:border-orange-200/30 hover:bg-white/[0.09]"
             >
               <div className="flex aspect-video items-center justify-center rounded-[1.5rem] border border-white/10 bg-[linear-gradient(135deg,_rgba(251,146,60,0.24),_rgba(168,85,247,0.22)),radial-gradient(circle_at_30%_30%,_rgba(255,255,255,0.18),_transparent_34%)] text-sm font-semibold uppercase tracking-[0.24em] text-white/55">
                 Thumbnail
               </div>
 
-              <div className="p-2 pt-5">
+              <div className="flex flex-1 flex-col p-2 pt-5">
                 <div className="mb-4 flex items-center justify-between gap-3">
                   <span className="rounded-full border border-orange-200/20 bg-orange-300/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-orange-100">
                     {project.category}
@@ -270,7 +270,7 @@ export default function Home() {
                   {project.description}
                 </p>
 
-                <div className="mt-6">
+                <div className="mt-auto pt-6">
                   <a
                     className="inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-bold text-[#08030f] transition hover:bg-orange-100"
                     href={project.href}
@@ -313,13 +313,13 @@ export default function Home() {
           {aiArtworks.map((artwork) => (
             <article
               key={artwork.title}
-              className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-2xl shadow-black/20 backdrop-blur transition hover:-translate-y-1 hover:border-orange-200/30 hover:bg-white/[0.09]"
+              className="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-2xl shadow-black/20 backdrop-blur transition hover:-translate-y-1 hover:border-orange-200/30 hover:bg-white/[0.09]"
             >
               <div className="flex aspect-[4/3] items-center justify-center rounded-[1.5rem] border border-white/10 bg-[linear-gradient(135deg,_rgba(251,146,60,0.24),_rgba(168,85,247,0.22)),radial-gradient(circle_at_30%_30%,_rgba(255,255,255,0.18),_transparent_34%)] text-sm font-semibold uppercase tracking-[0.24em] text-white/55">
                 Artwork Thumbnail
               </div>
 
-              <div className="p-2 pt-5">
+              <div className="flex flex-1 flex-col p-2 pt-5">
                 <div className="mb-4 flex items-center justify-between gap-3">
                   <span className="rounded-full border border-orange-200/20 bg-orange-300/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-orange-100">
                     {artwork.style}
@@ -333,7 +333,7 @@ export default function Home() {
                   {artwork.description}
                 </p>
 
-                <div className="mt-6">
+                <div className="mt-auto pt-6">
                   <button
                     className="inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-bold text-[#08030f] transition hover:bg-orange-100"
                     type="button"
