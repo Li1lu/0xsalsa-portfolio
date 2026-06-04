@@ -133,7 +133,7 @@ export default function Home() {
     <main className="relative min-h-screen overflow-hidden bg-[#08030f] text-white">
       <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,102,0,0.22),_transparent_34%),radial-gradient(circle_at_80%_20%,_rgba(168,85,247,0.2),_transparent_30%),linear-gradient(135deg,_rgba(255,255,255,0.04),_transparent_45%)]" />
 
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl flex-col px-6 py-6 sm:px-10 lg:px-12">
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-6 py-6 sm:px-10 lg:px-12">
         <nav className="flex items-center justify-between rounded-full border border-white/10 bg-white/5 px-5 py-4 shadow-2xl shadow-black/20 backdrop-blur">
           <a
             className="text-lg font-semibold tracking-tight"
@@ -156,7 +156,7 @@ export default function Home() {
           </div>
         </nav>
 
-        <section id="top" className="flex flex-1 items-center py-24 sm:py-32">
+        <section id="top" className="flex items-center py-14 sm:py-16 lg:py-20">
           <div className="max-w-4xl">
             <p className="mb-5 inline-flex rounded-full border border-orange-300/20 bg-orange-300/10 px-4 py-2 text-sm font-medium text-orange-100">
               Digital art, motion, and AI-led storytelling
