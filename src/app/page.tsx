@@ -86,13 +86,20 @@ export default function Home() {
         </section>
       </div>
 
-      <section className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-24 sm:px-10 lg:px-12">
+      <section
+        id="winner-works"
+        aria-labelledby="winner-works-title"
+        className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-24 sm:px-10 lg:px-12"
+      >
         <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-200/80">
               Winner Works
             </p>
-            <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-5xl">
+            <h2
+              id="winner-works-title"
+              className="mt-3 text-3xl font-black tracking-tight sm:text-5xl"
+            >
               Award-winning placeholders
             </h2>
           </div>
