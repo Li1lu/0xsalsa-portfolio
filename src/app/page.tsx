@@ -113,6 +113,21 @@ const aiArtworks = [
   },
 ];
 
+const links = [
+  {
+    label: "X / Twitter",
+    href: "https://example.com/0xsalsa-twitter",
+  },
+  {
+    label: "GitHub",
+    href: "https://example.com/0xsalsa-github",
+  },
+  {
+    label: "Email",
+    href: "mailto:hello@example.com",
+  },
+];
+
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#08030f] text-white">
@@ -352,6 +367,71 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <section
+        id="about"
+        aria-labelledby="about-title"
+        className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-24 sm:px-10 lg:px-12"
+      >
+        <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-8 shadow-2xl shadow-black/20 backdrop-blur sm:p-10 lg:p-12">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-200/80">
+            About
+          </p>
+          <h2
+            id="about-title"
+            className="mt-3 text-3xl font-black tracking-tight sm:text-5xl"
+          >
+            About
+          </h2>
+          <p className="mt-6 max-w-4xl text-lg leading-8 text-white/70 sm:text-xl">
+            0xSalsa is an AI Illustrator and Video Creator focused on surreal
+            art, creative storytelling, contest projects, and experimental
+            digital visuals.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="links"
+        aria-labelledby="links-title"
+        className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-20 sm:px-10 lg:px-12"
+      >
+        <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-200/80">
+              Links
+            </p>
+            <h2
+              id="links-title"
+              className="mt-3 text-3xl font-black tracking-tight sm:text-5xl"
+            >
+              Connect with 0xSalsa
+            </h2>
+          </div>
+          <p className="max-w-xl text-base leading-7 text-white/60">
+            Placeholder destinations for social channels, project repositories,
+            and direct contact.
+          </p>
+        </div>
+
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {links.map((link) => (
+            <a
+              key={link.label}
+              className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/[0.06] px-6 py-4 text-sm font-bold text-white shadow-2xl shadow-black/20 backdrop-blur transition hover:-translate-y-1 hover:border-orange-200/30 hover:bg-white/[0.09] hover:text-orange-100"
+              href={link.href}
+              rel="noreferrer"
+              target={link.href.startsWith("mailto:") ? undefined : "_blank"}
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <footer className="relative z-10 border-t border-white/10 px-6 py-8 text-center text-sm text-white/50 sm:px-10 lg:px-12">
+        © 2026 0xSalsa Portfolio
+      </footer>
     </main>
   );
 }
