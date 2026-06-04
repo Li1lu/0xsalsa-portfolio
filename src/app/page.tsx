@@ -74,6 +74,45 @@ const videoProjects = [
   },
 ];
 
+const aiArtworks = [
+  {
+    title: "Luminous Oracle Portrait",
+    style: "Editorial AI",
+    description:
+      "A refined placeholder portrait with radiant lighting, layered symbolism, and gallery-ready polish.",
+  },
+  {
+    title: "Botanical Dream Garden",
+    style: "Surreal Flora",
+    description:
+      "A lush imaginary landscape concept filled with organic forms, soft atmosphere, and painterly color.",
+  },
+  {
+    title: "Chrome Myth Guardian",
+    style: "Cyber Fantasy",
+    description:
+      "A dramatic character artwork placeholder blending futuristic armor, mythic scale, and cinematic detail.",
+  },
+  {
+    title: "Aurora City Vista",
+    style: "Worldbuilding",
+    description:
+      "A wide environmental study placeholder designed around glowing skylines, depth, and immersive mood.",
+  },
+  {
+    title: "Velvet Abstract Bloom",
+    style: "Abstract",
+    description:
+      "A polished composition placeholder with sculptural gradients, flowing shapes, and elegant contrast.",
+  },
+  {
+    title: "Celestial Fashion Study",
+    style: "Fashion AI",
+    description:
+      "A high-style concept placeholder featuring celestial accents, bold styling, and editorial composition.",
+  },
+];
+
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#08030f] text-white">
@@ -246,6 +285,67 @@ export default function Home() {
                   >
                     Watch Video
                   </a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section
+        id="ai-artworks"
+        aria-labelledby="ai-artworks-title"
+        className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-24 sm:px-10 lg:px-12"
+      >
+        <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-200/80">
+              AI Artworks
+            </p>
+            <h2
+              id="ai-artworks-title"
+              className="mt-3 text-3xl font-black tracking-tight sm:text-5xl"
+            >
+              Gallery artwork placeholders
+            </h2>
+          </div>
+          <p className="max-w-xl text-base leading-7 text-white/60">
+            A refined collection space for future AI illustrations, visual
+            studies, and polished experimental artwork.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {aiArtworks.map((artwork) => (
+            <article
+              key={artwork.title}
+              className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-2xl shadow-black/20 backdrop-blur transition hover:-translate-y-1 hover:border-orange-200/30 hover:bg-white/[0.09]"
+            >
+              <div className="flex aspect-[4/3] items-center justify-center rounded-[1.5rem] border border-white/10 bg-[linear-gradient(135deg,_rgba(251,146,60,0.24),_rgba(168,85,247,0.22)),radial-gradient(circle_at_30%_30%,_rgba(255,255,255,0.18),_transparent_34%)] text-sm font-semibold uppercase tracking-[0.24em] text-white/55">
+                Artwork Thumbnail
+              </div>
+
+              <div className="p-2 pt-5">
+                <div className="mb-4 flex items-center justify-between gap-3">
+                  <span className="rounded-full border border-orange-200/20 bg-orange-300/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-orange-100">
+                    {artwork.style}
+                  </span>
+                </div>
+
+                <h3 className="text-2xl font-bold tracking-tight text-white">
+                  {artwork.title}
+                </h3>
+                <p className="mt-4 min-h-20 text-sm leading-6 text-white/60">
+                  {artwork.description}
+                </p>
+
+                <div className="mt-6">
+                  <button
+                    className="inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-bold text-[#08030f] transition hover:bg-orange-100"
+                    type="button"
+                  >
+                    View Artwork
+                  </button>
                 </div>
               </div>
             </article>
