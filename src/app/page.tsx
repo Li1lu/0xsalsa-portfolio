@@ -143,6 +143,11 @@ export default function Home() {
             className="mb-5 inline-flex rounded-full border border-orange-300/20 bg-orange-300/10 px-4 py-2 text-sm font-medium text-orange-100"
             style={{ textShadow: "0 2px 14px rgba(0, 0, 0, 0.65)" }}
           >
+        <div
+          className="max-w-4xl"
+          style={{ textShadow: "0 2px 14px rgba(0, 0, 0, 0.65)" }}
+        >
+          <p className="mb-5 inline-flex rounded-full border border-orange-300/20 bg-orange-300/10 px-4 py-2 text-sm font-medium text-orange-100">
             Digital art, motion, and AI-led storytelling
           </p>
           <h1
@@ -151,6 +156,7 @@ export default function Home() {
               WebkitTextStroke: "0.75px rgba(0, 0, 0, 0.45)",
               textShadow: "0 2px 14px rgba(0, 0, 0, 0.65)",
             }}
+            style={{ WebkitTextStroke: "0.75px rgba(0, 0, 0, 0.45)" }}
           >
             0xSalsa Portfolio
           </h1>
