@@ -138,7 +138,7 @@ export default function Home() {
 
       <section
         id="top"
-        className="relative z-10 mx-auto flex w-full max-w-7xl items-center bg-cover bg-center bg-no-repeat px-6 py-14 sm:px-10 sm:py-16 lg:px-12 lg:py-20"
+        className="relative z-10 mx-auto flex w-full max-w-7xl items-center bg-cover bg-center bg-no-repeat px-6 pt-14 pb-28 sm:px-10 sm:pt-16 sm:pb-[7.5rem] lg:px-12 lg:pt-20 lg:pb-[8.5rem]"
         style={{ backgroundImage: "url('/hero-background.png')" }}
       >
         <div className="max-w-4xl">
@@ -146,7 +146,7 @@ export default function Home() {
             className="mb-5 inline-flex rounded-full border border-orange-300/20 bg-orange-300/10 px-4 py-2 text-sm font-medium text-orange-100"
             style={{ textShadow: heroTextShadow }}
           >
-            Digital art, motion, and AI-led storytelling
+            AI Illustration, Motion Design & Creative Storytelling
           </p>
           <h1
             className="text-5xl font-black tracking-tight text-balance sm:text-7xl lg:text-8xl"
@@ -157,15 +157,6 @@ export default function Home() {
           >
             0xSalsa Portfolio
           </h1>
-          <p
-            className="mt-6 max-w-2xl text-xl leading-8 sm:text-2xl"
-            style={{
-              color: "#fff",
-              WebkitTextStroke: "0.75px #000",
-            }}
-          >
-            AI Illustrator &amp; Video Creator
-          </p>
         </div>
       </section>
 
