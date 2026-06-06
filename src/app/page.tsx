@@ -135,13 +135,20 @@ export default function Home() {
 
       <section
         id="top"
-        className="relative z-10 mx-auto flex w-full max-w-7xl items-center px-6 py-14 sm:px-10 sm:py-16 lg:px-12 lg:py-20"
+        className="relative z-10 mx-auto flex w-full max-w-7xl items-center bg-cover bg-center bg-no-repeat px-6 py-14 sm:px-10 sm:py-16 lg:px-12 lg:py-20"
+        style={{ backgroundImage: "url('/hero-background.png')" }}
       >
-        <div className="max-w-4xl">
+        <div
+          className="max-w-4xl"
+          style={{ textShadow: "0 2px 14px rgba(0, 0, 0, 0.65)" }}
+        >
           <p className="mb-5 inline-flex rounded-full border border-orange-300/20 bg-orange-300/10 px-4 py-2 text-sm font-medium text-orange-100">
             Digital art, motion, and AI-led storytelling
           </p>
-          <h1 className="text-5xl font-black tracking-tight text-balance sm:text-7xl lg:text-8xl">
+          <h1
+            className="text-5xl font-black tracking-tight text-balance sm:text-7xl lg:text-8xl"
+            style={{ WebkitTextStroke: "0.75px rgba(0, 0, 0, 0.45)" }}
+          >
             0xSalsa Portfolio
           </h1>
           <p className="mt-6 max-w-2xl text-xl leading-8 text-white/70 sm:text-2xl">
