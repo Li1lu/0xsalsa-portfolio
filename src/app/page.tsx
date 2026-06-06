@@ -138,7 +138,7 @@ export default function Home() {
 
       <section
         id="top"
-        className="relative z-10 mx-auto flex w-full max-w-7xl items-center bg-cover bg-center bg-no-repeat px-6 py-14 sm:px-10 sm:py-16 lg:px-12 lg:py-20"
+        className="relative z-10 mx-auto flex w-full max-w-7xl items-center bg-cover bg-center bg-no-repeat px-6 pt-14 pb-28 sm:px-10 sm:pt-16 sm:pb-[7.5rem] lg:px-12 lg:pt-20 lg:pb-[8.5rem]"
         style={{ backgroundImage: "url('/hero-background.png')" }}
       >
         <div className="max-w-4xl">
