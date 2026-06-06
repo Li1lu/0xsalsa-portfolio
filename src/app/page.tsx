@@ -160,6 +160,7 @@ export default function Home() {
           <p
             className="mt-6 max-w-2xl text-xl leading-8 text-white sm:text-2xl"
             style={{ WebkitTextStroke: "0.6px #000" }}
+            style={{ WebkitTextStroke: "0.75px #000" }}
           >
             AI Illustrator &amp; Video Creator
           </p>
