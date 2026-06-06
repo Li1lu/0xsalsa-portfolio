@@ -157,15 +157,6 @@ export default function Home() {
           >
             0xSalsa Portfolio
           </h1>
-          <p
-            className="mt-6 max-w-2xl text-xl leading-8 sm:text-2xl"
-            style={{
-              color: "#fff",
-              WebkitTextStroke: "0.75px #000",
-            }}
-          >
-            AI Illustrator &amp; Video Creator
-          </p>
         </div>
       </section>
 
