@@ -158,6 +158,11 @@ export default function Home() {
             0xSalsa Portfolio
           </h1>
           <p
+            className="mt-6 max-w-2xl text-xl leading-8 text-white sm:text-2xl"
+            style={{
+              WebkitTextFillColor: "#ffffff",
+              WebkitTextStroke: "1px #000000",
+            }}
             className="mt-6 max-w-2xl text-xl leading-8 text-white/70 sm:text-2xl"
             style={{ textShadow: heroTextShadow }}
           >
