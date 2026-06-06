@@ -146,7 +146,7 @@ export default function Home() {
             className="mb-5 inline-flex rounded-full border border-orange-300/20 bg-orange-300/10 px-4 py-2 text-sm font-medium text-orange-100"
             style={{ textShadow: heroTextShadow }}
           >
-            Digital art, motion, and AI-led storytelling
+            AI Illustration, Motion Design & Creative Storytelling
           </p>
           <h1
             className="text-5xl font-black tracking-tight text-balance sm:text-7xl lg:text-8xl"
