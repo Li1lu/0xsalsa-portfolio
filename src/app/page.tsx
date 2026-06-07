@@ -243,7 +243,10 @@ export default function Home() {
         id="video-projects"
         aria-labelledby="video-projects-title"
         className="relative isolate z-10 mx-auto w-full max-w-7xl overflow-hidden bg-cover bg-center bg-no-repeat px-6 pb-24 sm:px-10 lg:px-12"
-        style={{ backgroundImage: "url('/video-projects-background.jpg')" }}
+        style={{
+          backgroundImage:
+            "url('/experimental-ilustrasi-abstract--mutescale-style---.jpeg')",
+        }}
       >
         <div className="pointer-events-none absolute inset-0 bg-black/65" />
         <div className="relative z-10">
