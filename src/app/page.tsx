@@ -242,16 +242,13 @@ export default function Home() {
       <section
         id="video-projects"
         aria-labelledby="video-projects-title"
-        className="relative isolate z-10 mx-auto w-full max-w-7xl overflow-hidden px-6 pb-24 sm:px-10 lg:px-12"
+        className="relative isolate z-10 mx-auto w-full max-w-7xl overflow-hidden bg-cover bg-center bg-no-repeat px-6 pb-24 sm:px-10 lg:px-12"
+        style={{
+          backgroundImage:
+            "url('/experimental-ilustrasi-abstract--mutescale-style---.jpeg')",
+        }}
       >
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
-          style={{
-            backgroundImage:
-              "url('/experimental-ilustrasi-abstract--mutescale-style--.jpeg')",
-          }}
-        />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="pointer-events-none absolute inset-0 bg-black/65" />
         <div className="relative z-10">
           <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
