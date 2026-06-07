@@ -242,63 +242,67 @@ export default function Home() {
       <section
         id="video-projects"
         aria-labelledby="video-projects-title"
-        className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-24 sm:px-10 lg:px-12"
+        className="relative isolate z-10 mx-auto w-full max-w-7xl overflow-hidden bg-cover bg-center bg-no-repeat px-6 pb-24 sm:px-10 lg:px-12"
+        style={{ backgroundImage: "url('/video-projects-background.jpg')" }}
       >
-        <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-200/80">
-              Video Projects
+        <div className="pointer-events-none absolute inset-0 bg-black/65" />
+        <div className="relative z-10">
+          <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-200/80">
+                Video Projects
+              </p>
+              <h2
+                id="video-projects-title"
+                className="mt-3 text-3xl font-black tracking-tight sm:text-5xl"
+              >
+                Featured video placeholders
+              </h2>
+            </div>
+            <p className="max-w-xl text-base leading-7 text-white/60">
+              A flexible showcase for upcoming reels, motion studies, and
+              narrative video experiments.
             </p>
-            <h2
-              id="video-projects-title"
-              className="mt-3 text-3xl font-black tracking-tight sm:text-5xl"
-            >
-              Featured video placeholders
-            </h2>
           </div>
-          <p className="max-w-xl text-base leading-7 text-white/60">
-            A flexible showcase for upcoming reels, motion studies, and
-            narrative video experiments.
-          </p>
-        </div>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {videoProjects.map((project) => (
-            <article
-              key={project.title}
-              className="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-2xl shadow-black/20 backdrop-blur transition hover:-translate-y-1 hover:border-orange-200/30 hover:bg-white/[0.09]"
-            >
-              <div className="flex aspect-video items-center justify-center rounded-[1.5rem] border border-white/10 bg-[linear-gradient(135deg,_rgba(251,146,60,0.24),_rgba(168,85,247,0.22)),radial-gradient(circle_at_30%_30%,_rgba(255,255,255,0.18),_transparent_34%)] text-sm font-semibold uppercase tracking-[0.24em] text-white/55">
-                Thumbnail
-              </div>
-
-              <div className="flex flex-1 flex-col p-2 pt-5">
-                <div className="mb-4 flex items-center justify-between gap-3">
-                  <span className="rounded-full border border-orange-200/20 bg-orange-300/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-orange-100">
-                    {project.category}
-                  </span>
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {videoProjects.map((project) => (
+              <article
+                key={project.title}
+                className="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-2xl shadow-black/20 backdrop-blur transition hover:-translate-y-1 hover:border-orange-200/30 hover:bg-white/[0.09]"
+              >
+                <div className="flex aspect-video items-center justify-center rounded-[1.5rem] border border-white/10 bg-[linear-gradient(135deg,_rgba(251,146,60,0.24),_rgba(168,85,247,0.22)),radial-gradient(circle_at_30%_30%,_rgba(255,255,255,0.18),_transparent_34%)] text-sm font-semibold uppercase tracking-[0.24em] text-white/55">
+                  Thumbnail
                 </div>
 
-                <h3 className="text-2xl font-bold tracking-tight text-white">
-                  {project.title}
-                </h3>
-                <p className="mt-4 min-h-24 text-sm leading-6 text-white/60">
-                  {project.description}
-                </p>
+                <div className="flex flex-1 flex-col p-2 pt-5">
+                  <div className="mb-4 flex items-center justify-between gap-3">
+                    <span className="rounded-full border border-orange-200/20 bg-orange-300/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-orange-100">
+                      {project.category}
+                    </span>
+                  </div>
 
-                <div className="mt-auto pt-6">
-                  <a
-                    className="inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-bold text-[#08030f] transition hover:bg-orange-100"
-                    href={project.href}
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Watch Video
-                  </a>
+                  <h3 className="text-2xl font-bold tracking-tight text-white">
+                    {project.title}
+                  </h3>
+                  <p className="mt-4 min-h-24 text-sm leading-6 text-white/60">
+                    {project.description}
+                  </p>
+
+                  <div className="mt-auto pt-6">
+                    <a
+                      className="inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-bold text-[#08030f] transition hover:bg-orange-100"
+                      href={project.href}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Watch Video
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
